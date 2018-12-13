@@ -4,7 +4,7 @@
 
 Route-awareness is an important feature for web applications.  It is useful for fetching appropriate data and contextually loading scripts, among other things.
 
-`js-routes` is a very simple object that allows inheritors of an imaginary `Router` interface to parse the `URI` for parsing `routes` based on any convention or invention. 
+`js-routes` is a very simple object that provides an `API` for `Routers` that parse the `URI`. 
 
 ### Example
 
@@ -17,6 +17,21 @@ map.setRouter(new HashTagRouter());
 
 // if there is a route, find it
 var route = map.hasRoute() ? map.getRoute() : '';
+
+// here is a simple example for contextually loading scripts using an loadScript function
+
+var loadScript = (scriptName) => {
+   
+}
+
+switch route
+  case 'fiction'
+    loadScript('fiction');
+  break;
+
+  case 'non-fiction'
+    loadScript('non-fiction');
+  break;
 
 ```
 
