@@ -18,11 +18,7 @@ map.setRouter(new HashTagRouter());
 // if there is a route, find it
 var route = map.hasRoute() ? map.getRoute() : '';
 
-// here is a simple example for contextually loading scripts using an loadScript function
 
-var loadScript = (scriptName) => {
-   
-}
 
 switch route
   case 'fiction'
