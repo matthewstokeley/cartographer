@@ -81,9 +81,9 @@ Returns the route property.
 
 ---
 
-###### jsRoutes
+##### jsRoutes
 
-`index` is the main module and only has give methods.
+`index` is the main module and only has five methods.
 
 ---
 
