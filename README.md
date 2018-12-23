@@ -21,11 +21,11 @@ var route = map.hasRoute() ? map.getRoute() : '';
 
 
 switch route
-  case 'fiction'
+  case 'fiction':
     loadScript('fiction');
   break;
 
-  case 'non-fiction'
+  case 'non-fiction':
     loadScript('non-fiction');
   break;
 
