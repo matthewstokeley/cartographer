@@ -1,6 +1,3 @@
-// ,ultiple routes should be available.  here, a hash tag route is manually instantiated. 
-//var route = new HashTagRoute();
-
 /**
  * [cartographer description]
  * @type {Object}
