@@ -4,21 +4,17 @@ export default class HashTagRoute {
 
 
 	/**
-	 * [constructor description]
-	 * @return {[type]} [description]
+	 * wonky method chaining initializatin function
+	 * @return {Object}
 	 */
 	constructor() {
-		// set the uri with the findUri Methods
-		// and set the route with the findRoute method, which requires
-		// the uri, accessed with the getUri method
-		this.setUri(this.findURI()).setRoute(this.findRoute(this.getURI()));
+		this.setUri(this.findURI()).setRoute(this.findRoute(this.getURI()))
 	}
 
 
 
 	/**
-	 * [findUri description]
-	 * @return {String} [description]
+	 * @return {String}
 	 */
 	findURI() {
 		return document.documentURI;
@@ -27,9 +23,8 @@ export default class HashTagRoute {
 
 
 	/**
-	 * [findRoute description]
-	 * @param  {String} uri [description]
-	 * @return {String}     [description]
+	 * @param  {String} uri
+	 * @return {String}
 	 */
 	findRoute(uri) {
 		if (!uri) {
@@ -41,9 +36,9 @@ export default class HashTagRoute {
 
 
 	/**
-	 * [setUri description]
 	 * @chainable
-	 * @param {Router} uri [description]
+	 * @param {String} uri
+	 * @return {Object}
 	 */
 	setURI(uri) {
 		this.uri = uri;
@@ -53,8 +48,8 @@ export default class HashTagRoute {
 
 
 	/**
-	 * [getUri description]
-	 * @return {String} [description]
+	 * 
+	 * @return {String}
 	 */
 	getURI() {
 		return this.uri;
@@ -63,21 +58,19 @@ export default class HashTagRoute {
 
 
 	/**
-	 * [hasRoute description]
-	 * @return {Boolean} [description]
+	 * @return {Boolean}
 	 */
 	hasRoute() {
-		if (!this.route) {
-			return false;
-		}
-		return true;
+		return !this.route
+                    ? false
+		    : true
 	}
 
 
 
 	/**
-	 * [Router setter
-	 * @param {Router} route [description]
+	 * @param {String} route 
+	 * @return {Object}
 	 */
 	setRoute(route) {
 		this.route = route;
@@ -88,7 +81,7 @@ export default class HashTagRoute {
 
 	/**
 	 * Router getter
-	 * @return {String} [description]
+	 * @return {String}
 	 */
 	getRoute() {
 		return this.route;
