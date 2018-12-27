@@ -7,32 +7,25 @@
  */
 export default const jsRoutes = {
 	/**
-	 * [setRouteObject description]
-	 * @param {[type]} route [description]
+	 * @param {Object} route
 	 */
-	setRouter: function(router) { this.router = router; },
+	setRouter: (router) => this.router = router,
 	/**
-	 * [getRouteObject description]
-	 * @return {[type]} [description]
+	 * @return {Object}
 	 */
-	getRouter: function() { return this.router; },
-    /**
-	 * [hasRoute description]
-	 * @param  {[type]}  ) {            return this.route.hasRoute( [description]
-	 * @return {Boolean}   [description]
+	getRouter: () => this.router,
+        /**
+	 * @return {Boolean}
 	 */
-	hasRoute: function() { return this.router.hasRoute(); },
+	hasRoute: () => this.router.hasRoute(),
 	/**
-	 * [getRoute description]
-	 * @param  {[type]} ) {            return this.route.getRoute( [description]
-	 * @return {[type]}   [description]
+	 * @return {String}
 	 */
-	getRoute: function() { return this.router.getRoute(); },
+	getRoute: () => this.router.getRoute(),
 	/**
-	 * [changeRoute description]
-	 * @return {[type]} [description]
+	 * @todo
 	 */
 	changeRoute: function() {
-	    this.router.init();
+	    // this.router.init();
 	}
 }
