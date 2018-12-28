@@ -2,9 +2,9 @@
 
 0.2.1
 
-Route-awareness is an important feature for web applications.  It is useful for fetching appropriate data and contextually loading scripts, among other things.
+Route-awareness can be an important feature for web applications, useful for fetching appropriate data and contextually loading scripts, among other things.
 
-`js-routes` is a very simple object that provides an `API` for `Routers` that parse the `URI`. 
+`js-routes` is a very simple object that provides a public-facing `API` for `Routers` that parse the `URI`. 
 
 ### Example
 
@@ -12,11 +12,13 @@ Route-awareness is an important feature for web applications.  It is useful for 
 import { jsRoutes as map } from './index';
 import { HashTagRouter } from './routers/HashTagRouter';
 
-// set the router we want to use, named after the syntax that is used to determine the route.
+// set the router we want to use.
 map.setRouter(new HashTagRouter());
 
 // if there is a route, find it
-var route = map.hasRoute() ? map.getRoute() : '';
+var route = map.hasRoute() 
+    ? map.getRoute() 
+    : ''
 
 
 
@@ -81,9 +83,9 @@ Returns the route property.
 
 ---
 
-##### jsRoutes
+##### js-routes
 
-`index` is the main module and only has five methods.
+`index` is the main module export, a class, and only has five methods.
 
 ---
 
