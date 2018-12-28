@@ -1,8 +1,6 @@
 
 // a simple class to find the 
 export default class HashTagRoute {
-
-
 	/**
 	 * wonky method chaining initializatin function
 	 * @return {Object}
@@ -10,18 +8,12 @@ export default class HashTagRoute {
 	constructor() {
 		this.setUri(this.findURI()).setRoute(this.findRoute(this.getURI()))
 	}
-
-
-
 	/**
 	 * @return {String}
 	 */
 	findURI() {
 		return document.documentURI;
 	}
-
-
-
 	/**
 	 * @param  {String} uri
 	 * @return {String}
@@ -32,9 +24,6 @@ export default class HashTagRoute {
 		}
 		return uri.split('#')[1];
 	}
-
-
-
 	/**
 	 * @chainable
 	 * @param {String} uri
@@ -44,9 +33,6 @@ export default class HashTagRoute {
 		this.uri = uri;
 		return this;
 	}
-
-
-
 	/**
 	 * 
 	 * @return {String}
@@ -54,9 +40,6 @@ export default class HashTagRoute {
 	getURI() {
 		return this.uri;
 	}
-
-
-
 	/**
 	 * @return {Boolean}
 	 */
@@ -65,9 +48,6 @@ export default class HashTagRoute {
                     ? false
 		    : true
 	}
-
-
-
 	/**
 	 * @param {String} route 
 	 * @return {Object}
@@ -76,9 +56,6 @@ export default class HashTagRoute {
 		this.route = route;
 		return this;
 	}
-
-
-
 	/**
 	 * Router getter
 	 * @return {String}
