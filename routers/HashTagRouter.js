@@ -6,23 +6,23 @@ export default class HashTagRoute {
 	 * @return {Object}
 	 */
 	constructor() {
-		this.setUri(this.findURI()).setRoute(this.findRoute(this.getURI()))
+	    this.setUri(this.findURI()).setRoute(this.findRoute(this.getURI()))
 	}
 	/**
 	 * @return {String}
 	 */
 	findURI() {
-		return document.documentURI;
+	    return document.documentURI;
 	}
 	/**
 	 * @param  {String} uri
 	 * @return {String}
 	 */
 	findRoute(uri) {
-		if (!uri) {
-			return false;
-		}
-		return uri.split('#')[1];
+	    if (!uri) {
+		return false;
+	    }
+	    return uri.split('#')[1];
 	}
 	/**
 	 * @chainable
@@ -30,37 +30,37 @@ export default class HashTagRoute {
 	 * @return {Object}
 	 */
 	setURI(uri) {
-		this.uri = uri;
-		return this;
+	    this.uri = uri;
+	    return this;
 	}
 	/**
 	 * 
 	 * @return {String}
 	 */
 	getURI() {
-		return this.uri;
+	    return this.uri;
 	}
 	/**
 	 * @return {Boolean}
 	 */
 	hasRoute() {
-		return !this.route
-                    ? false
-		    : true
+	    return !this.route
+                ? false
+		: true
 	}
 	/**
 	 * @param {String} route 
 	 * @return {Object}
 	 */
 	setRoute(route) {
-		this.route = route;
-		return this;
+	    this.route = route;
+	    return this;
 	}
 	/**
 	 * Router getter
 	 * @return {String}
 	 */
 	getRoute() {
-		return this.route;
+	    return this.route;
 	}
 }
