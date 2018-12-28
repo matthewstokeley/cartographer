@@ -2,7 +2,7 @@
 // a simple class to find the 
 export default class HashTagRoute {
 	/**
-	 * wonky method chaining initializatin function
+	 * wonky chaining initializatin function
 	 * @return {Object}
 	 */
 	constructor() {
