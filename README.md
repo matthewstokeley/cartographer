@@ -9,11 +9,11 @@ Route-awareness can be an important feature for web applications, useful for fet
 ### Example
 
 ```
-import { jsRoutes as map } from './index';
-import { HashTagRouter } from './routers/HashTagRouter';
+import { jsRoutes as map } from './index'
+import { HashTagRouter } from './routers/HashTagRouter'
 
 // set the router we want to use.
-map.setRouter(new HashTagRouter());
+map.setRouter(new HashTagRouter())
 
 // if there is a route, find it
 var route = map.hasRoute() 
@@ -24,12 +24,12 @@ var route = map.hasRoute()
 
 switch route
   case 'fiction':
-    loadScript('fiction');
-  break;
+    loadScript('fiction')
+  break
 
   case 'non-fiction':
-    loadScript('non-fiction');
-  break;
+    loadScript('non-fiction')
+  break
 
 ```
 
