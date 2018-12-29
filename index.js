@@ -14,7 +14,7 @@ export default const jsRoutes = {
         /**
 	 * @return {Boolean}
 	 */
-	hasRoute: () => this.router.hasRoute(),
+	containsRoute: () => this.router.containsRoute(),
 	/**
 	 * @return {String}
 	 */
