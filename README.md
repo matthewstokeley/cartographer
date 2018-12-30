@@ -20,8 +20,6 @@ var route = map.containsRoute()
     ? map.getRoute() 
     : ''
 
-
-
 switch route
   case 'fiction':
     loadScript('fiction')
