@@ -16,7 +16,7 @@ import { HashTagRouter } from './routers/HashTagRouter'
 map.setRouter(new HashTagRouter())
 
 // if there is a route, find it
-var route = map.containsRoute() 
+const route = map.containsRoute() 
     ? map.getRoute() 
     : ''
 
