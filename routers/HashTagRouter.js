@@ -43,7 +43,7 @@ export default class HashTagRoute {
 	/**
 	 * @return {Boolean}
 	 */
-	hasRoute() {
+	containsRoute() {
 	    return !this.route
                 ? false
 		: true
