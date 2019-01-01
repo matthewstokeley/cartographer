@@ -1,6 +1,6 @@
 ## js-routes
 
-0.2.1
+0.3.0
 
 Route-awareness can be an important feature for web applications, useful for fetching appropriate data and contextually loading scripts, among other things.
 
@@ -63,7 +63,7 @@ This is the only method that needs to be changed between inheritors of the `Rout
 
 ---
 
-`hasRoute`
+`containsRoute`
 
 Returns a boolean if the `route` property is set.
 
@@ -105,7 +105,7 @@ Returns the `router`-defined `route`.
 
 ---
 
-`hasRoute`
+`containsRoute`
 
 Returns a boolean if the `router` has a defined `route`. 
 
@@ -117,3 +117,7 @@ Returns a boolean if the `router` has a defined `route`.
   
 
 ---
+
+##### Changelog
+
+0.3.0 - edited a method name to reflect conventions used in the `Set` prototype.
